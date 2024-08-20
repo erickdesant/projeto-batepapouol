@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bate Papo UOL</title>
+    <link rel="stylesheet" href="cssreset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="menu-top">
+        <div class="logo">
+            <img src="assets/logo%201@2x.png">
+        </div>
+        <div class="linkMenu">
+            <button class="openMenu"><img src="assets/people%201.png"></button>
+        </div>
+    </nav>
+    <section class="chat">
+        <div class="messages">
+        </div>
+    </section>
+    <section class="textBox">
+        <form class="messageForm">
+            <div class = "textBox-message">
+                <input type="text" autofocus placeholder="Escreva aqui..." class="textInput" name = "text">
+                <p class="textInfo">Enviando para Todos (público)</p>
+            </div>
+            <div class="sendIcon">
+                <button type="submit"><img src="assets/Vector.png"></button>
+            </div>
+        </form>
+    </section>
+    <aside>
+        <div class="sideMenu">
+        </div>
+        <div class="sideModal">
+            <h3>Escolha um contato para enviar mensagem:</h3>
+            <ul class="usersList">
+                <li><button class="selectDestination"><img src="assets/people%201.png">Todos</button>
+                    <ion-icon name="checkmark-outline" class="checkmark"></ion-icon>
+                </li>
+            </ul>
+            <h3>Escolha a visibilidade:</h3>
+            <ul>
+                <li class="liPublic"><button class="isPublic"><img src="assets/lock-closed%201.png">Público</button>
+                    <ion-icon name="checkmark-outline" class="checkmark"></ion-icon>
+                </li>
+                <li class="liPrivate"><button class="isPrivate"><img src="assets/lock-closed%201.png">Reservadamente</button>
+                    <ion-icon name="checkmark-outline" class="checkmark"></ion-icon>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
